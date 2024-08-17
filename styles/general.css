@@ -1,0 +1,291 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: "ADLaM Display" , sans-serif, arial;
+    height: 100%;
+    background-color: #000000;
+}
+
+html {
+    height: 100%;
+}
+
+
+.parallax {
+    background-image: url('https://lh3.googleusercontent.com/pw/AP1GczMOJwNGPFkxJv92XGd7CQMZ2BctcKbl7bQKGzEP4YI-vDa_VtTfkwVI-oTBMoCHz4kY9-BAuG3kBJgjcLsgw2A49APq7gpZguHAQZoVfFP06vR-G-A=w2400');
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+
+.section-1 {
+    height: 1500px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 30px 30px rgb(0, 0, 0);
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 5% 0%;
+    align-items: center;
+}
+
+.section-1-1 {
+    flex: 3;
+    width: 90%;
+    margin-bottom: 30px;
+    position: relative; /* Important for the overlay */
+    background-color: rgba(255, 0, 0, 0.268); /* Adjust the color and transparency */
+    overflow: hidden;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+/* Background Image with Overlay */
+.section-1-1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://lh3.googleusercontent.com/pw/AP1GczNCyd8NwzFbLKzo6Q-uix-eh7NTywbwPTd_TM4p6wd_9GlN6ai7jn_pr3rB8U3x1OML6kCDlMDWbEsjI6M_TL3DXHAhRV4NIUXmkyVzOaS98-exSYw=w2400');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5; /* Adjust the opacity for transparency */
+    mix-blend-mode: multiply; /* Optional: blends the image with the background color */
+}
+
+
+.section-1-1-title
+{
+    margin-top: 80px;
+    margin-left: 70px;
+    margin-right: 70px;
+    font-size: 3rem;
+    color: #c4beb2;
+    position: relative;
+    z-index: 1;
+}
+
+.section-1-1-text
+{
+    margin-left: 100px;
+    margin-right: 70px;
+    font-size: 2rem;
+    color: #79756d;
+    position: relative;
+    z-index: 1;
+}
+
+.section-1-1-button
+{
+    font-size: 2rem;
+    color: #c4beb2;
+    background-color: #000000;
+    padding: 20px 30px;
+    position: relative;
+    margin-left: 70px;
+    width: fit-content;
+    border-radius: 5px;
+    margin-bottom: 100px;
+    transition: all 0.25s;
+}
+
+.section-1-1-button:hover
+{
+    border-radius: 40px;
+    background-color: #c4beb2;
+    color: #000000;
+}
+
+.section-1-2
+{
+    flex: 4;
+    width: 90%;
+}
+
+
+.site-intro-full-logo {
+    margin-top: 100px;
+    width: 75%;
+}
+
+.join-button {
+    margin-top: 10px;
+    margin-left: 7px;
+    background-color: black;
+    border-width: 0px;
+    color: beige;
+    width: 275px;
+    padding: 20px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: 
+        margin-top 0.5s,
+        margin-left 0.5s,
+        background-color 0.5s,
+        border-radius 0.5s,
+        box-shadow 0.5s;
+}
+
+.join-button:hover {
+    margin-top: 0px;
+    margin-left: 0px;
+    background-color: #b70000;
+    border-radius: 30px;
+    box-shadow: 7px 10px black;
+}
+
+.section-2 {
+    height:fit-content;
+    background-image: url('https://lh3.googleusercontent.com/pw/AP1GczN3a029A1M0ExMKDV90alGJX4_lW0-2xP09JJCrTrzjLCWUZ9rhnB9DAI4iboDrfYUTAI2eQ0Vfa0aTQICtv6eCvl8pJJEG8rE3ER0aww1Ka-05vyo=w2400');
+    position: relative;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+@media (max-width: 1500px) {
+
+    .site-intro-full-logo {
+        margin-top: 100px;
+        width: 1000px;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .join-button {
+        width: 200px;
+        padding: 15px;
+        font-size: 1.2rem;
+        margin-left: 0px;
+        margin-top: 0px;
+        align-self: center;
+    }
+
+    .join-button:hover {
+        margin-top: -15px;
+        margin-left: -15px;
+        background-color: #11402F;
+        border-radius: 30px;
+        box-shadow: 15px 15px black;
+    }
+
+    .site-intro-full-logo {
+        margin-top: 100px;
+        width: 95%;
+    }
+
+    .parallax
+    {
+        height: 700px;
+    }
+
+    .section-1-1
+    {
+        flex: 3;
+    }
+
+    .section-1-2
+    {
+        flex: 2;
+    }
+
+    .section-1
+    {
+        height: 1200px;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .section-1
+    {
+        height: 1000px;
+    }
+
+    .section-1-1
+    {
+        flex: 5;
+    }
+
+    .section-1-1-title
+    {
+        font-size: 2rem;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 50px;
+    }
+
+    .section-1-1-text
+    {
+        font-size: 1.5rem;
+        margin-left: 60px;
+        margin-right: 50px;
+        margin-bottom: 50px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .parallax
+    {
+        height: 500px;
+    }
+
+    .section-1
+    {
+        height: 900px;
+    }
+
+    .section-1-1
+    {
+        flex: 3;
+    }
+
+    .section-1-2
+    {
+        flex: 1;
+    }
+
+    .section-1-1-title
+    {
+        font-size: 2rem;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 50px;
+    }
+
+    .section-1-1-text
+    {
+        font-size: 1.5rem;
+        margin-left: 60px;
+        margin-right: 50px;
+        margin-bottom: 50px;
+    }
+
+    .section-1-1-button
+    {
+        font-size: 1.5rem;
+    }
+}

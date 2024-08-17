@@ -1,0 +1,149 @@
+#header {
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+    transition: all 0.5s;
+}
+
+.header-scrolled
+{
+    background-color: #000000b8;
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+
+.site-title {
+    text-decoration: none;
+    font-size: 2.5rem;
+    font-weight: 1000;
+    color: #c4beb2;
+    margin-left: 30px;
+}
+
+.site-logo {
+    height: 70px;
+    margin-top: 5px;
+    margin-left: 10px;
+    transition: all 0.5s;
+}
+
+.header-left-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-left: 20px;
+    flex: 8;
+    transition: all 0.5s;
+}
+
+.header-spacer {
+    flex: 1;
+}
+
+
+nav ul
+{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 0px;
+}
+
+nav a
+{
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    color: #c4beb2;
+    text-decoration: none;
+    transition: 
+        background-color 0.25s, 
+        color 0.25s, 
+        border-radius 0.5s,
+        font-weight 0.25s,
+        padding-left 0.5s,
+        padding-right 0.5s;
+}
+
+nav a:hover
+{
+    background-color: #380b0b;
+    color: beige;
+    border-radius: 20px;
+    font-weight: 700;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+
+.sidebar
+{   
+    position: fixed;
+    top: -15px;
+    right: 0px;
+    height: 100vh;
+    width: 250px;
+    padding-left: 20px;
+    z-index: 999;
+    background-color: rgba(36, 36, 36, 0.512);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.3);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 30px;
+    transition: all 0.5s;
+}
+
+
+@media (max-width: 1050px) {
+    .hide-on-mobile{
+        display: none;
+    }
+}
+
+@media (min-width: 1051px) {
+    .hide-on-pc{
+        display: none;
+    }
+}
+
+@media (max-width: 620px) {
+
+    .site-title
+    {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .site-title
+    {
+        font-size: 1.5rem;
+    }
+}
+ 
